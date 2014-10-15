@@ -1,0 +1,19 @@
+ <ul>
+     <li>Project name
+         <ul>
+             <li>
+                 Properties
+             </li>
+             <li>References
+                 <ul>
+                     <li ng-repeat="reference in tree.references | orderBy: 'include'">
+                         {{reference.include}}
+                     </li>
+                 </ul>
+             </li>
+             <li ng-repeat="folder in tree.folders | orderBy: 'include'">
+                 {{folder.include}}
+             </li>
+         </ul>
+     </li>
+</ul>
